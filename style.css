@@ -32,3 +32,47 @@ p, li { color: #e3dccf; }
 footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--muted); font-size: 14.5px; }
 footer a { color: var(--muted); margin-right: 16px; }
 .updated { color: var(--muted); font-size: 15px; }
+
+/* Product page */
+.wide { max-width: 1060px; }
+.hero .appicon { width: 116px; height: 116px; }
+.kicker { color: var(--orange); font-weight: 700; letter-spacing: 0.04em; margin: 22px 0 6px; }
+.hero h1 { max-width: 15em; margin-left: auto; margin-right: auto; }
+.cta { margin-top: 26px; display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.button { background: var(--orange); color: #1a1206; font-weight: 800; padding: 13px 26px; border-radius: 999px; }
+.aside { color: var(--muted); font-size: 15.5px; }
+.center { text-align: center; margin-left: auto; margin-right: auto; }
+.fineprint { color: var(--muted); font-size: 14px; }
+.phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 48px 0 10px; }
+.phones figure, .phone { margin: 0; text-align: center; }
+.phones img, .phone img { width: 100%; height: auto; border-radius: 30px; border: 6px solid #1b1e26; background: #1b1e26;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55); display: block; }
+.phones figcaption { margin-top: 14px; color: var(--muted); font-size: 15.5px; }
+.phones + .fineprint { text-align: center; }
+section[id], .cards { margin-top: 84px; }
+.band { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 54px; align-items: center; }
+.band.reverse .text { order: 2; }
+.band h2, #pricing h2 { font-size: clamp(26px, 4vw, 34px); line-height: 1.15; margin: 0 0 12px; text-wrap: balance; }
+.band .phone { max-width: 300px; justify-self: center; }
+.steps, .ticks { padding: 0; margin: 20px 0 0; list-style: none; }
+.steps { counter-reset: step; }
+.steps li, .ticks li { position: relative; padding-left: 42px; margin-bottom: 14px; }
+.steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 1px; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--orange); color: #1a1206; font-weight: 800; font-size: 15px; display: grid; place-items: center; }
+.ticks li::before { content: ""; position: absolute; left: 6px; top: 9px; width: 14px; height: 8px; border-left: 3px solid var(--orange); border-bottom: 3px solid var(--orange); transform: rotate(-45deg); }
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 30px 0 16px; }
+.plan { position: relative; background: rgba(19, 34, 74, 0.7); border: 1px solid var(--line); border-radius: 22px; padding: 26px 22px; text-align: center; }
+.plan.best { border: 2px solid var(--orange); }
+.plan h3 { margin: 0; font-size: 18px; }
+.plan .price { font-size: 38px; font-weight: 800; color: var(--cream); margin: 8px 0 6px; }
+.plan p { margin: 0; color: var(--muted); font-size: 15.5px; }
+.tag { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #1a1206; font-weight: 800; font-size: 13px; padding: 4px 12px; border-radius: 999px; white-space: nowrap; }
+@media (max-width: 760px) {
+  .phones { grid-template-columns: 1fr 1fr; }
+  .phones figure:nth-child(3) { display: none; }
+  .band, .band.reverse { grid-template-columns: 1fr; gap: 28px; }
+  .band.reverse .text { order: 0; }
+  .plans { grid-template-columns: 1fr; }
+  section[id], .cards { margin-top: 60px; }
+  nav a { margin-left: 12px; font-size: 14px; }
+}

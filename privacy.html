@@ -13,7 +13,7 @@
 <body>
 <header><div class="wrap">
   <a class="brand" href="index.html"><img src="assets/icon-512.png" alt="">Hygge&nbsp;<span>IPTV</span></a>
-  <nav><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms and licences</a></nav>
+  <nav><a href="index.html#setup">How it works</a><a href="index.html#pricing">Pricing</a><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms and licences</a></nav>
 </div></header>
 <main><div class="wrap">
 <h1>Privacy policy</h1>
@@ -21,16 +21,21 @@
 <p class="lead">Hygge IPTV collects nothing about you.</p>
 
 <h2>What we collect</h2>
-<p>Nothing. The app has no accounts, advertising, analytics or tracking, and sends no information to us, Aksjefokus AS.</p>
+<p>Nothing. The app has no accounts, advertising, analytics or tracking of our own, and sends no information to us, Aksjefokus AS.</p>
 
 <h2>What stays on your device</h2>
-<p>Your playlists, programme guide, favourites and viewing history are stored on the device only. Logins and playlist links are kept in the device keychain. All of it is deleted when you remove the playlist or the app.</p>
+<p>Your playlists, programme guide, favourites and viewing history are stored on the device only. Logins and playlist links are kept in the device keychain. Removing a playlist deletes it with its login, favourites and history; deleting the app deletes everything.</p>
 
 <h2>Who the app contacts</h2>
 <ul>
   <li><strong>Your provider</strong>, at the addresses in the playlist you added, to fetch channels, guide, pictures and streams. Your provider sees these requests, including your IP address.</li>
-  <li><strong>Your TV</strong>, on your local network, when you use AirPlay or Chromecast. Chromecast uses Google's Cast software, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+  <li><strong>The servers your playlist names for pictures.</strong> A playlist can give each channel a logo or poster address, and the app loads it from there.</li>
+  <li><strong>Your TV</strong>, on your local network, when you use AirPlay or Chromecast. While casting to a Chromecast, the TV fetches the stream through your phone over your Wi-Fi and gets a temporary address, not your provider's.</li>
+  <li><strong>hyggeiptv.app and Apple's test servers</strong>, only if you open the built-in demo playlist.</li>
 </ul>
+
+<h2>Chromecast</h2>
+<p>For Chromecast the app includes Google's Cast SDK. Google documents that the SDK can collect diagnostics, product interaction and coarse location inferred from the network. We have turned off its analytics logging, and it only starts looking for TVs when you tap the Cast button. Google handles what it receives under <a href="https://policies.google.com/privacy">its privacy policy</a>; we do not receive any of it. The app contains no advertising, analytics or crash-reporting software.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:support@hyggeiptv.app">support@hyggeiptv.app</a></p>
@@ -39,6 +44,7 @@
 <footer><div class="wrap">
   <p><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms and licences</a></p>
   <p>Hygge IPTV is a media player. It contains no channels, films or series, and has no connection to any content provider.</p>
+  <p>Published by Aksjefokus AS, Oslo, Norway.</p>
 </div></footer>
 </body>
 </html>
